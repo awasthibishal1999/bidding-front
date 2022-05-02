@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
    subscribe(data =>{
       this.products = data;
 
-      console.log(data);
+
     });
   }
 

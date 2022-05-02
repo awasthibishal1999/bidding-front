@@ -22,6 +22,36 @@ export class ProductService {
   getAll(): Observable<Product[]> {
     return this.http.get<Product[]>(this.apiServerUrl);
   }
+
+  getDetails(productId:number):Observable<Product>{
+
+    const productDetailsUrl=`${this.apiServerUrl}/${productId}`;
+    return this.http.get<Product>(productDetailsUrl);
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // get(id: any): Observable<Product> {
   //   return this.http.get(`${this.apiServerUrl}/${id}`);
   // }

@@ -8,7 +8,7 @@
               <div class="card-body p-4">
                   <div class="text-center">
                       <!-- Product name-->
-                      <h5 class="fw-bolder" >{{p?.productName}}</h5>
+                      <h5 class="fw-bolder" ><a routerLink="/products/{{p.id}}">{{p?.productName}}</a></h5>
                       <!-- Product price-->
                       <h6>{{p.price |  currency: 'NPR':true}}</h6>
                   </div>
@@ -16,7 +16,8 @@
               <!-- Product actions-->
               <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 
-                  <div class="text-center"><a class="btn btn-outline-dark mt-auto" [routerLink]="['/products']">View options</a></div>
+                  <div class="text-center"><a class="btn btn-outline-dark mt-auto" >Bid On Product</a></div>
+
               </div>
           </div>
       </div>
