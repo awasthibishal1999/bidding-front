@@ -15,6 +15,7 @@ import { SellComponent } from './sell/sell.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { BidComponent } from './bid/bid.component';
 
 
 
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
      BuyComponent,
      SellComponent,
     ProductDetailsComponent,
+    BidComponent,
 
 
 

@@ -1,20 +1,20 @@
-<table style="width:100%">
-  <tr>
-    <th>Image</th>
-    <th>Lot Info</th>
-    <th>Vehicle Info</th>
-    <th>Condition</th>
-    <th>Bids</th>
+<table style="width:100%" >
+  <tr >
+    <th>Name</th>
+    <th>Price</th>
+    <th>Description</th>
+
 
   </tr>
 
-  <tr>
-    <td>Image</td>
-    <td>2021</td>
-    <td>BMW</td>
-    <td>Used</td>
+  <tr *ngFor="let p of products">
+
+    <td>{{p.productName}}</td>
+    <td>{{p.price}}</td>
+    <td>{{p.description}}</td>
     <td>
-      <button class="btn btn-outline-primary btn-sm" type="button"> Bid</button></td>
+      <button class="btn btn-outline-primary btn-lg" type="button" routerLink="/bid-products/{{p.id}}"> Bid</button>
+      <!-- <button class="btn btn-outline-primary btn-lg" type="button"> Edit</button></td> -->
   </tr>
 
 </table>
